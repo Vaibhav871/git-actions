@@ -1,0 +1,13 @@
+name: issue github actions
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  comment-with-actions:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: dump fithub comment
+        run: echo '${{ toJSON(github.event) }} | jq'
+        shell: bash
