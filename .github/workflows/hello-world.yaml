@@ -1,6 +1,7 @@
 name: hello-world gitActions
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
