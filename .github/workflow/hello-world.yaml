@@ -1,0 +1,27 @@
+name: hello-world gitActions
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+
+Jobs:
+  hello:
+    runs_on: ubuntu_latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: hell-world
+        run: echo "hello-world"
+        shell: bash
+    goodbye:
+      runs_on: ubuntu_latest
+      steps: 
+        - name: goodbye actions
+          run: echo "goodbye"
+          shell: bash
+
+
