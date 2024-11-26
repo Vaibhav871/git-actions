@@ -17,11 +17,11 @@ Jobs:
       - name: hell-world
         run: echo "hello-world"
         shell: bash
-    goodbye:
-      runs_on: ubuntu_latest
-      steps: 
-        - name: goodbye actions
-          run: echo "goodbye"
-          shell: bash
+  goodbye:
+    runs_on: ubuntu_latest
+    steps: 
+      - name: goodbye actions
+        run: echo "goodbye"
+        shell: bash
 
 
