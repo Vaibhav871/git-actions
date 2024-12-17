@@ -17,3 +17,10 @@ jobs:
       - name: hello-world
         run: echo "hello-world"
         shell: bash
+  match:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: match-cricket
+        run: echo "docker install"
+
