@@ -1,4 +1,4 @@
-name: hello-world gitActions
+name: hello_world
 
 on:
   workflow_dispatch:
@@ -9,20 +9,11 @@ on:
     branches:
       - master
 
-
 jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: hell-world
+      - name: hello-world
         run: echo "hello-world"
         shell: bash
-  goodbye:
-    runs-on: ubuntu-latest
-    steps: 
-      - name: goodbye actions
-        run: echo "goodbye"
-        shell: bash
-
-
