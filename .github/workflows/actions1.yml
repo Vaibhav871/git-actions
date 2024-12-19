@@ -1,0 +1,9 @@
+name: first
+
+on: [ push ]
+
+jobs:
+  runs-on: ubuntu-runner
+  steps:
+    - name: this is first message
+      run: echo 'this is github actions'
