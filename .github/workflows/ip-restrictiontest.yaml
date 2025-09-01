@@ -15,7 +15,9 @@ jobs:
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
-      
+
+      - name: Who am I (debug)
+        run: gcloud auth list
+
       - name: Test GCP Access
-        run: |
-          gcloud projects list
+        run: gcloud projects list
