@@ -25,5 +25,8 @@ jobs:
       - name: Who am I (debug)
         run: gcloud auth list
 
-      - name: Test GCP Access
-        run: gcloud projects list
+      - name: List Compute Engine Instances
+        run: |
+          gcloud compute instances list \
+            --project=${{ secrets.GCP_PROJECT_ID }} \
+            --format="table(name,zone,status)"
